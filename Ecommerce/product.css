@@ -126,6 +126,7 @@ img{
     width: 100vw;
     height: 100vh;
     background-color: rgba(225, 165, 0, 0.5);
+    display: none;
     transform: translateX(100%);
     transition: all 1s linear;
 }
@@ -137,6 +138,7 @@ img{
     cursor: pointer;
 }
 .shopping.show{
+    display: block;
     transform: translateX(0);
 }
 .cart-background{
@@ -305,6 +307,11 @@ a{
 }
 @media only screen and (max-width:500px)
 {
+    body{
+        width: 420px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
     .container{
         margin: 10px; 
         display: grid;
