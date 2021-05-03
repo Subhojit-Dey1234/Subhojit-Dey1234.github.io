@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Covid19</title>
+</head>
+<body>
+    <!-- <div class="form">
+        <form>
+            <input type="text" name="country" placeholder="Enter the Country Name">
+            <input type="submit" value="search" class="button">
+        </form>
+    </div> -->
+    <!-- Confirmed -->
+    <div class="flexbox">
+        <div class="container1">
+            <h4>Confirmed Case</h4>
+            <span></span>
+            <p></p>
+        </div>
+        <!-- Active Cases -->
+        <div class="container2">
+            <h4>Active Case</h4>
+            <span></span>
+            <p></p>
+        </div>
+
+        <!-- Deaths -->
+        <div class="container3">
+            <h4>Recent Death</h4>
+            <span></span>
+            <p></p>
+        </div>
+    </div>
+    <span class="title"><h5>Click the Image </h5></span>
+    <a href="/map.html">
+        <div class="imageContainer">
+            <img src="./depositphotos_32476605-stock-illustration-india-map.jpg" alt="Click the Image" srcset="">
+        </div>
+    </a>
+    <div class="container">
+        <div class="chart-container" >
+            <canvas id="Total-case"></canvas>
+        </div>
+        <div class="chart-container" >
+            <canvas id="Active-Case"></canvas>
+        </div>
+        <div class="chart-container" >
+            <canvas id="Death-Case"></canvas>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
