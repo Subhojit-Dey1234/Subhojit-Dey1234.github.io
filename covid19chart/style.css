@@ -95,8 +95,8 @@ body{
         align-items: center;
     }
     .flexbox div{
-        width: 20vw;
-        height: 20vh;
+        width: 32vw;
+        height: 15vh;
     }
     .flexbox div span{
         position: relative;
