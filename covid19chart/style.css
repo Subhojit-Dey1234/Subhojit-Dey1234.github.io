@@ -126,7 +126,7 @@ body{
         display: flex;
         flex-direction: column;
         top: 200px;
-        left: -10vw;
+        left: -30vw;
     }
     .chart-container{
         width: 400px;
