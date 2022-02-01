@@ -24,17 +24,15 @@ image.addEventListener("load",function(){
     });
     
     
-    canvas.addEventListener("touchmove",function(event){
-        var touch = event.touches[0];
-        var x = touch.pageX;
-        var y = touch.pageY;
-        // or taking offset into consideration
-        var x_2 = touch.pageX - canvas.offsetLeft;
-        var y_2 = touch.pageY - canvas.offsetTop;
+    canvas.addEventListener("touchstart",touchEvent)
+    canvas.addEventListener("touchend",touchEvent)
+    canvas.addEventListener("touchmove",touchEvent)
 
-        mouse.x = x
-        mouse.y = y
-    })
+    function touchEvent(event){
+        console.log(event.touches[0])
+        mouse.x = event.touches[0].clientX
+        mouse.y = event.touches[0].clientY
+    }
 
     ctx.drawImage(image,0,0,canvas.width,canvas.height)
     const imageData = ctx.getImageData(0,0,canvas.width,canvas.height)
