@@ -23,6 +23,11 @@ image.addEventListener("load",function(){
         mouse.y = event.offsetY;
     });
     
+    
+    canvas.addEventListener("touchmove", function (event) {
+        mouse.x = event.offsetX;
+        mouse.y = event.offsetY;
+    });
 
     ctx.drawImage(image,0,0,canvas.width,canvas.height)
     const imageData = ctx.getImageData(0,0,canvas.width,canvas.height)
